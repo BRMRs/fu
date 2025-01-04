@@ -4,21 +4,39 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Bio
-    url: /
+  - name: Home
+    url: '/'
     weight: 10
-  - name: Research
-    url: /publication
-    weight: 11
-  - name: Talks
-    url: /event
-    weight: 12
-  - name: Experience
-    url: experience/
-    weight: 20
+#  - name: News
+#    url: '#sider'
+#    weight: 20  
   - name: Projects
-    url: projects/
+    url: '#projects'
     weight: 30
-  - name: Uses
-    url: uses/
-    weight: 40
+  - name: Publications
+    url: '#publications'
+    weight: 50
+#  - name: Experience
+#    url: '/experience'
+#    weight: 55  
+ # - name: Services
+ #   url: page/services
+ #   weight: 62
+  - name: Awards etc
+    url: '/awards'
+    weight: 80
+  - name: Group & Recruit
+    url: '/group'
+    weight: 85
+  - name: Fun Facts
+    url: '/fun'
+    weight: 90
+  - name: Blog
+  #   params:
+  #     rel: external
+  #   pre: <i class="fa fa-heart"></i>
+    url: https://bigaidream-gardens.github.io/
+    weight: 95
+  - name: Contact
+    url: '/contact'
+    weight: 100
