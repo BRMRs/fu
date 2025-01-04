@@ -1,30 +1,55 @@
 ---
-title: 'Experience'
-date: 2023-10-24
-type: landing
+# An instance of the Portfolio widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: portfolio
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 30
+
+title: Research Projects
+subtitle: ''
+
+content:
+  # Page type to display. E.g. project.
+  page_type: project
+
+  # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+  filter_default: 0
+
+  # Filter toolbar (optional).
+  # Add or remove as many filters (`filter_button` instances) as you like.
+  # To show all items, set `tag` to "*".
+  # To filter by a specific tag, set `tag` to an existing tag name.
+  # To remove the toolbar, delete the entire `filter_button` block.
+  filter_button:
+
+  - name: Key Projects
+    tag: key
+  - name: Side / Previous Projects
+    tag: side
+  - name: All
+    tag: '*'
+  # - name: Transformer
+  #   tag: Transformer
 
 design:
-  # Section spacing
-  spacing: '5rem'
+  # Choose how many columns the section has. Valid values: '1' or '2'.
+  columns: '1'
 
-# Page sections
-sections:
-  - block: resume-projects
-    content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
-      # Upload project images to your `assets/media/` folder and reference the filename in the `image` option
-      items:
-        - title: Pandas
-          description: Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
-          image: panda.png
-          url: https://github.com/pandas-dev/pandas
-        - title: scikit-learn
-          description: scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
-          image: robot.png
-          url: https://github.com/scikit-learn/scikit-learn
-        - title: PyTorch
-          description: PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
-          image: nlp.png
-          url: https://github.com/pytorch/pytorch
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   5 = Showcase
+  view: 2
+  spacing:
+  # Customize the section spacing. Order is top, right, bottom, left.
+    padding: ["39px", "0", "39px", "0"]
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows: false
+
 ---
+
