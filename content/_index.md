@@ -45,7 +45,7 @@ sections:
       title: 'Welcome 👋'
       subtitle: ''
       text: |-
-Jie Fu (付杰) is a happy and funny research scientist at Shanghai AI Lab (上海人工智能实验室), chasing his [human-centered](https://intelligence.org/summary/) big AI dream[^1]. 
+          Jie Fu (付杰) is a happy and funny research scientist at Shanghai AI Lab (上海人工智能实验室), chasing his [human-centered](https://intelligence.org/summary/) big AI dream[^1]. 
 
 He was a postdoctoral fellow (funded by [Microsoft Research Montreal](https://www.microsoft.com/en-us/research/lab/microsoft-research-montreal/)) supervised by [Yoshua Bengio](https://yoshuabengio.org/) at University of Montreal, [Quebec AI Institute (Mila)](https://mila.quebec/en/). He was an [IVADO](https://ivado.ca/en/) postdoctoral fellow supervised by [Chris Pal](https://mila.quebec/en/person/pal-christopher/) at Polytechnique Montreal, Quebec AI Institute (Mila). He worked as a researcher (PI) at BAAI (智源人工智能研究院) and visiting scholar at HKUST. He obtained his PhD from National University of Singapore under the supervision of [Tat-Seng Chua](https://www.chuatatseng.com/). He received outstanding paper awards at NAACL 2024, ICLR 2021. 
 <!-- [NAACL 2024](https://docs.google.com/presentation/d/1TVDooAZqkNObz5ysVhDFtqnnVHR-u8wqYvgix-gzPMs/edit#slide=id.p), [ICLR 2021](https://iclr-conf.medium.com/announcing-iclr-2021-outstanding-paper-awards-9ae0514734ab).  -->
