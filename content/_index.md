@@ -52,7 +52,7 @@ sections:
       columns: '1'
       spacing:
       # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["25px", "0", "25px", "0"]
+        padding: ["25px", "0", "25px", "0"]
   - block: collection
     content:
       title: Recent News
