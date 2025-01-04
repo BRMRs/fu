@@ -50,6 +50,9 @@ sections:
         - **Applications**: Safe AI ([arXiv 23'](https://arxiv.org/abs/2310.19852)), multi-modal learning ([arXiv 24'](https://arxiv.org/abs/2406.06462)), multi-modal embodied intelligence ([CoRL 23'](https://proceedings.mlr.press/v205/kang23a.html)), AI for science ([Nature Biotechnology 24'](https://www.nature.com/articles/s41587-024-02241-z)), etc.
     design:
       columns: '1'
+      spacing:
+      # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["25px", "0", "25px", "0"]
   - block: collection
     content:
       title: Recent News
