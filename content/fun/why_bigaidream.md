@@ -21,4 +21,4 @@ design:
 ---
 When I was doing PhD, Andrew Ng said:
 
-> The {{< hl >}}big AI dream{{< /hl >}} of making machines that could someday evolve to do intelligent things like humans could - I was turned off by that. I didn't really think that was feasible when I first joined Stanford. 
+> The ##big AI dream## of making machines that could someday evolve to do intelligent things like humans could - I was turned off by that. I didn't really think that was feasible when I first joined Stanford. 
