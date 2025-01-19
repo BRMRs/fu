@@ -4,9 +4,6 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Big AI Dream | Jie Fu
-    url: '/'
-    weight: 80
   - name: Home
     url: '/'
     weight: 10
