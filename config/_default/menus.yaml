@@ -38,5 +38,5 @@ main:
     url: https://bigaidream-gardens.github.io/
     weight: 95
   - name: Contact
-    url: '/contact'
+    url: 'contact/'
     weight: 100
