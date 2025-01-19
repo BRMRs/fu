@@ -54,6 +54,13 @@ sections:
       # Customize the section spacing. Order is top, right, bottom, left.
         padding: ["25px", "0", "25px", "0"]
   - block: collection
+    id: projects
+    # Order that this section appears on the page.
+    weight: 30
+
+    # This file represents a page section.
+    headless: true
+
     content:
       title: Research Projects
       subtitle: ''
@@ -80,8 +87,12 @@ sections:
       view: date-title-summary
       # Reduce spacing
       spacing:
-        padding: [0, 0, 0, 0]
+      # Customize the section spacing. Order is top, right, bottom, left.
+        padding: ["39px", "0", "39px", "0"]
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: false
   - block: collection
+    id: publications
     content:
       title: Selected Publications
       subtitle: ''
