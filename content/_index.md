@@ -105,8 +105,8 @@ sections:
     weight: 40
     content:
       title: Selected Publications
-      subtitle: ''
-      text: {{% callout note %}}My full publications can be found in [Google Scholar](https://scholar.google.com/citations?hl=en&user=66osleIAAAAJ&view_op=list_works&sortby=pubdate).{{% /callout %}}
+      subtitle: I'm (still...) [training](http://i.imgur.com/2hP26Xl.jpg) myself [(slowly...)](http://norvig.com/21-days.html)
+      text: ''
       # Page type to display. E.g. post, talk, publication...
       page_type: publication
       # Choose how many pages you would like to display (0 = all pages)
