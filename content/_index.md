@@ -17,7 +17,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: yoshi.webp
           filters:
-            brightness: 0.4
+            brightness: 0.35
           size: cover
           position: center
           parallax: false
@@ -84,7 +84,7 @@ sections:
     headless: true
 
     # Order that this section appears on the page.
-    weight: 60
+    weight: 40
     content:
       title: Selected Publications
       subtitle: I'm (still...) [training](http://i.imgur.com/2hP26Xl.jpg) myself [(slowly...)](http://norvig.com/21-days.html)
