@@ -55,6 +55,9 @@ sections:
         padding: ["25px", "0", "25px", "0"]
   - block: collection
     id: projects
+
+    widget: pages
+
     # Order that this section appears on the page.
     weight: 30
 
@@ -93,10 +96,17 @@ sections:
       flip_alt_rows: false
   - block: collection
     id: publications
+    widget: pages
+
+    # This file represents a page section.
+    headless: true
+
+    # Order that this section appears on the page.
+    weight: 40
     content:
       title: Selected Publications
-      subtitle: ''
-      text: ''
+      subtitle: I'm (still...) [training](http://i.imgur.com/2hP26Xl.jpg) myself [(slowly...)](http://norvig.com/21-days.html)
+      text: {{% callout note %}}My full publications can be found in [Google Scholar](https://scholar.google.com/citations?hl=en&user=66osleIAAAAJ&view_op=list_works&sortby=pubdate).{{% /callout %}}
       # Page type to display. E.g. post, talk, publication...
       page_type: publication
       # Choose how many pages you would like to display (0 = all pages)
@@ -116,7 +126,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: compact
+      view: 2
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
