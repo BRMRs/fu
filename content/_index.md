@@ -84,7 +84,7 @@ sections:
     headless: true
 
     # Order that this section appears on the page.
-    weight: 40
+    weight: 60
     content:
       title: Selected Publications
       subtitle: I'm (still...) [training](http://i.imgur.com/2hP26Xl.jpg) myself [(slowly...)](http://norvig.com/21-days.html)
