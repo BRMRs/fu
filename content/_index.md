@@ -41,7 +41,7 @@ sections:
         padding: [0, 0, 0, 0]
   - block: markdown
     content:
-      title: 'Welcome 👋'
+      title: ''
       subtitle: ''
       text: |-
         Jie Fu (付杰) is a happy and funny research scientist at Shanghai AI Lab (上海人工智能实验室), chasing his [human-centered](https://intelligence.org/summary/) big AI dream[^1]. 
@@ -55,11 +55,39 @@ sections:
         padding: ["25px", "0", "25px", "0"]
   - block: collection
     content:
-      title: Recent News
+      title: Research Projects
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
-      page_type: post
+      page_type: project
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 1
+      # Filter on criteria
+      filters:
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: date-title-summary
+      # Reduce spacing
+      spacing:
+        padding: [0, 0, 0, 0]
+  - block: collection
+    content:
+      title: Selected Publications
+      subtitle: ''
+      text: ''
+      # Page type to display. E.g. post, talk, publication...
+      page_type: publication
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
