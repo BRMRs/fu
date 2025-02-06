@@ -78,16 +78,36 @@ jobs:
       - name: 🗑 Delete workflow runs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
         run: |
-          # 获取仓库的所有工作流运行记录
-          RUNS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/runs" \
-            | jq -r '.workflow_runs[].id')
+          page=1
+          while true; do
+            # 获取当前页的运行记录 ID
+            RUNS=$(curl -s -L \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/repos/$OWNER/$REPO/actions/runs?page=$page" \
+              | jq -r '.workflow_runs[].id')
   
-          # 遍历每个运行记录的 ID 并删除
-          for run_id in $RUNS; do
-            curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" \
-              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id"
+            if [ -z "$RUNS" ]; then
+              break
+            fi
+  
+            # 遍历每个运行记录的 ID 并删除
+            for run_id in $RUNS; do
+              echo "Deleting run ID: $run_id"
+              curl -L \
+                -X DELETE \
+                -H "Accept: application/vnd.github+json" \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/$OWNER/$REPO/actions/runs/$run_id"
+              sleep 1  # 延迟 1 秒，避免速率限制
+            done
+  
+            ((page++))
           done
 
 
