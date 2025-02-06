@@ -66,7 +66,7 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     permissions: write-all
-
+  
     steps:
       - name: 🗑 Delete deployment
         uses: strumwolf/delete-deployment-environment@v2
@@ -74,6 +74,21 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           environment: github-pages
           onlyRemoveDeployments: true
+  
+      - name: 🗑 Delete workflow runs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 获取仓库的所有工作流运行记录
+          RUNS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs" \
+            | jq -r '.workflow_runs[].id')
+  
+          # 遍历每个运行记录的 ID 并删除
+          for run_id in $RUNS; do
+            curl -X DELETE -H "Authorization: token $GITHUB_TOKEN" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id"
+          done
 
 
   # Deployment job
